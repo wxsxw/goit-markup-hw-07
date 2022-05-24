@@ -15,10 +15,10 @@
 </head>
 <body>
    <!-- header -->
-    <header class="header">
-        <div class="container header-container">
+    <header class="line">
+        <div class="container header">
         <nav class="menu">
-                <a href="./index.html" class="logo"><span class="header-logo">Web</span>Studio </a>
+                <a href="./index.html" class="logo"><span class="logo__header">Web</span>Studio </a>
                 <ul class="navigation list">
                     <li class="navigation__item"> <a href="./index.html" class="link current">Студия</a></li>
                     <li class="navigation__item"> <a href="./portfolio.html" class="link">Портфолио</a></li>
@@ -26,12 +26,12 @@
                 </ul>
             </nav>
             <ul class="contacts list">
-                <li class="contacts__item"> <a class="link" href="mailto:info@devstudio.com">
+                <li class="contacts__item"> <a class="contacts__link" href="mailto:info@devstudio.com">
                     <svg class="contacts__icon" height="12" width="16">
                     <use href="./img/icons.svg/symbol-defs.svg#icon-envelope"> </use>
                     </svg>
                     info@devstudio.com</a></li>
-                <li class="contacts__item"> <a class="link" href="tel:+380961111111">
+                <li class="contacts__item"> <a class="contacts__link" href="tel:+380961111111">
                     <svg class="contacts__icon" height="16" width="10">
                         <use href="./img/icons.svg/symbol-defs.svg#icon-smartphone"> </use>
 
@@ -46,79 +46,79 @@
         <!-- Hero -->
         <section class="hero">
             <div class="container">
-            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-           <button type="button" class="hero-btn btn" data-modal-open >Заказать услугу</button>
+            <h1 class="container__hero-title">Эффективные решения для вашего бизнеса</h1>
+           <button type="button" class="container__hero-btn btn" data-modal-open >Заказать услугу</button>
         </div>
         </section>
     <!-- Features -->
-    <section class="features">
+    <section class="section">
         <div class="container">
         <h2 class="visually-hidden">Особенности компании</h2>
         <ul class="features-list list">
-            <li class="item"> 
-                <div class="features-icons">
+            <li class="features-list__item"> 
+                <div class="features-list__icons">
                    <svg width="70" height="70"  >
                        <use href="./img/icons.svg/symbol-defs.svg#icon-antenna-1"> </use>
                    </svg>
                 </div>
-                <h3 class="features-title">Внимание к деталям</h3>
-                <p class="features-text">Идейные соображения, а также начало повседневной работы по формированию позиции. </p>
+                <h3 class="features-list__title">Внимание к деталям</h3>
+                <p class="features-list__text">Идейные соображения, а также начало повседневной работы по формированию позиции. </p>
             </li>
-            <li class="item">
-                <div class="features-icons">
+            <li class="features-list__item">
+                <div class="features-list__icons">
                     <svg width="70" height="70">
                         <use href="./img/icons.svg/symbol-defs.svg#icon-clock-1"> </use>
                     </svg>
                 </div>
-                <h3 class="features-title">Пунктуальность</h3>
-                <p class="features-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                <h3 class="features-list__title">Пунктуальность</h3>
+                <p class="features-list__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
-            <li class="item"> 
-                <div class="features-icons">
+            <li class="features-list__item"> 
+                <div class="features-list__icons">
                     <svg width="70" height="70">
                         <use href="./img/icons.svg/symbol-defs.svg#icon-diagram-1"> </use>
                     </svg>
                 </div>
-                <h3 class="features-title">Планирование</h3>
-                <p class="features-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                <h3 class="features-list__title">Планирование</h3>
+                <p class="features-list__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
-            <li class="item">
-                <div class="features-icons">
+            <li class="features-list__item">
+                <div class="features-list__icons">
                     <svg width="70" height="70">
                         <use href="./img/icons.svg/symbol-defs.svg#icon-astronaut-1"></use>
 
                     </svg>
                      
                 </div>
-                <h3 class="features-title">Современные технологии</h3>
-                <p class="features-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                <h3 class="features-list__title">Современные технологии</h3>
+                <p class="features-list__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
         </ul>
         </div>
     </section>
 
     <!-- Work --> 
-    <section class="work">
+    <section class="section section__work">
         <div class="container">
-        <h2 class="work-title">Чем мы занимаемся</h2>
+        <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="work-list list">
-            <li class="work-item">
-                <div class="work-box">
+            <li class="work-list__item">
+                <div class="work-list__box">
                     <img src="./img/box1.jpg" alt="Десктопные приложения" width="370" height="294">
-                    <p class="text-img">Десктопные приложения</p>
+                    <p class="work-list__text">Десктопные приложения</p>
                     </div>
                     </li>
                 
-            <li class="work-item">
-                <div class="work-box">
+            <li class="work-list__item">
+                <div class="work-list__box">
                     <img src="./img/box2.jpg" alt="Мобильные приложения" width="370" height="294">
-                    <p class="text-img">Мобильные приложения</p>
+                    <p class="work-list__text">Мобильные приложения</p>
                 </div>
             </li>
-            <li class="work-item">
-                <div class="work-box">
+            <li class="work-list__item">
+                <div class="work-list__box">
                     <img src="./img/box3.jpg" alt="Дизайнерские решения" width="370" height="294">
-                    <p class="text-img">Дизайнерские решения</p>
+                    <p class="work-list__text">Дизайнерские решения</p>
                 </div>
             </li>           
         </ul>
