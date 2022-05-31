@@ -597,11 +597,11 @@ p {
   justify-content: center;
   margin-bottom: 50px;
 }
-.filters-list .item + .item {
+.filters-list__item + .filters-list__item {
   margin-left: 8px;
 }
 
-.filters-btn {
+.filters-list__btn {
   cursor: pointer;
   color: var(--primary-text-color);
   background-color: #f5f4fa;
@@ -618,12 +618,12 @@ p {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.filters-btn-current {
+.filters-list__btn-current {
   color: var(--color-text-white);
   background-color: var(--color-accent);
 }
-.filters-btn:hover,
-.filters-btn:focus {
+.filters-list__btn:hover,
+.filters-list__btn:focus {
   color: var(--color-text-white);
   background-color: var(--color-accent);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -636,27 +636,42 @@ p {
   padding-bottom: 94px;
   padding-top: 94px;
 }
-.project-img {
+.project-list {
+  background: var(--color-text-white);
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-list__item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.project-overlay__img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-.project-card {
+.project-list__link-card {
   display: block;
   text-decoration: none;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project-card:hover,
-.project-card:focus {
+.project-list__link-card:hover,
+.project-list__link-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.project-card-overlay {
+.project-overlay {
   position: relative;
   overflow: hidden;
 }
 
-.project-overlay-text {
+.project-overlay__text {
   position: absolute;
   top: 0;
   left: 0;
@@ -672,14 +687,9 @@ p {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .project-card-overlay:hover .project-overlay-text,
-.project-card-overlay:focus .project-overlay-text {
+.project-list__link-card:hover .project-overlay__text,
+.project-list__link-card:focus .project-overlay__text {
   transform: translateY(0);
-} */
-.project-card:hover .project-overlay-text,
-.project-card:focus .project-overlay-text {
-  transform: translateY(0);
-  /* background-color: rgba(33, 150, 243, 0.9); */
 }
 
 .project-content {
@@ -687,23 +697,7 @@ p {
   border: 1px solid #eeeeee;
 }
 
-.project-list {
-  background: var(--color-text-white);
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-bottom: -30px;
-  justify-content: center;
-  align-items: center;
-}
-
-.project-list .item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-bottom: 30px;
-}
-
-.project-title {
+.project-content__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -712,7 +706,7 @@ p {
   margin-bottom: 4px;
 }
 
-.project-text {
+.project-content__text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
