@@ -1,6 +1,7 @@
-@import './base/commond';
+@import './base/base';
 @import './base/container';
 @import './components/visually-hidden';
+///////////////////////////
 @import './layout/header';
 @import './layout/hero';
 @import './layout/features';
@@ -8,5 +9,12 @@
 @import './layout/team';
 @import './layout/customer';
 @import './layout/footer';
-@import './components/backdrop'
+///////////////////////////
+@import './components/backdrop';
+@import './components/modal';
+//////////////////////////
+@import './pages/portfolio';
+
+
+
 
